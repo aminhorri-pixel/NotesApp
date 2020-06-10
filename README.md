@@ -1,7 +1,4 @@
-# FloatingToolbar
-A toolbar that morphs from a FloatingActionButton
 
-Inspired by the material design spec: https://www.google.com/design/spec/components/buttons-floating-action-button.html#buttons-floating-action-button-transitions
 
 Available from API 14.
 
