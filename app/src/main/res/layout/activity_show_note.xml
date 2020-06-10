@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/theme_style_show_note"
+    android:layout_height="match_parent"
+    tools:context=".ShowNoteActivity">
+
+    <include layout="@layout/my_toolbar" android:id="@+id/inc_show_note_toolbar"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/rv_showNote_rv"
+        android:layout_margin="10dp"
+        android:layout_below="@id/inc_show_note_toolbar"
+        android:layout_height="match_parent"/>
+
+
+    <ImageView
+        android:layout_marginTop="150dp"
+        app:srcCompat="@drawable/delete_note_dialog"
+        android:layout_centerInParent="true"
+        android:id="@+id/imgLogoShowNote"
+        android:layout_marginLeft="20dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <TextView
+        android:text="You don't have any notes right now!"
+        android:layout_below="@id/imgLogoShowNote"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/txtDontNote"
+        android:textColor="@color/With"
+        android:textSize="18dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"/>
+
+
+    <View
+        android:background="@drawable/view_note_btn"
+        android:layout_width="200dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/createView"
+        android:layout_alignParentBottom="true"
+        android:layout_height="80dp"/>
+
+
+    <Button
+        android:layout_width="160dp"
+        android:text="Create the note"
+        android:background="@drawable/btn_style_create"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/font"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn_show_create"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/With"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

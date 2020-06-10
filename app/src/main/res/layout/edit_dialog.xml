@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/my_toolbar" android:id="@+id/tol_editDialog_toolbar"/>
+
+        <EditText
+            android:background="@drawable/edt_style"
+            android:layout_margin="15dp"
+            android:padding="8dp"
+            android:layout_below="@id/tol_editDialog_toolbar"
+            android:hint="Title..."
+            android:id="@+id/edt_ediDialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:background="@drawable/edt_style"
+            android:layout_margin="15dp"
+            android:padding="8dp"
+            android:hint="Description..."
+            android:layout_below="@+id/edt_ediDialog_title"
+            android:layout_width="match_parent"
+            android:scrollHorizontally="true"
+            android:gravity="start"
+            android:id="@+id/edt_ediDialog_desc"
+            android:layout_height="100dp"/>
+
+        <LinearLayout
+            android:layout_below="@id/edt_ediDialog_desc"
+            android:orientation="horizontal"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:textColor="@color/With"
+                android:fontFamily="@font/font"
+                android:background="@drawable/btn_style_create"
+                android:text="Update"
+                android:layout_width="0dp"
+                android:id="@+id/btn_editDialog_update"
+                android:layout_weight=".5"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:textColor="@color/With"
+                android:fontFamily="@font/font"
+                android:background="@drawable/btn_style"
+                android:text="Cancel"
+                android:layout_margin="5dp"
+                android:id="@+id/btn_editDialog_cancel"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
